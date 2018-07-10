@@ -131,8 +131,8 @@ class Application
 			} else {
 				die($key . ' not found in application container');
 			}
-			return $this->container[$key];
 		}
+		return $this->container[$key];
 	}
 		
 	/**
@@ -152,7 +152,6 @@ class Application
 			'html' => 'System\\Html',
 			'db' => 'System\\Database',
 			'view' => 'System\\View\\ViewFactory', 
-
 		];
 	}
 
@@ -162,7 +161,7 @@ class Application
 	*@param STRING $KEY
 	*@return bool
 	*/
-	public function issharing($key)
+	public function isSharing($key)
 	{
 		return isset($this->container[$key]);
 	}
